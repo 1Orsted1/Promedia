@@ -6,28 +6,34 @@
 		<title>Practica 1</title>
 		<script type="text/javascript" src="PracticaFunciones1.js"></script> 
 		<script type="text/javascript" src="eliminarElemento.js"></script> 
+	        <script type="text/javascript" src="calcularPromedio.js"></script>
 	</head>
 	<body>
 
 		<div class="container">
-		  <form id="form" action="PracticaFunciones1.html" method="post">
+		  <form id="form" action="#" method="post">
 				<div class="row">
-					<div class="col-md-6"></div>
-					<label for="cantidad">Introduce el nombre del alumno</label>
+					<div class="col-md-1"></div>
+					<label for="cantidad">Introduce el nombre de la materia</label>
 					<input type="text" name="" id="alumno" value="" />
+					<div class="col-md-2"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<label for="cantidad">Introduce la calificacion de la materia </label>
+					<input type="text" name="" id="calificacion" value="" />
 					<div class="col-md-4"></div>
 				</div>
 				<br>
 				<div class="row">
 					<div class="col-md-5"></div>
-					<label for="cantidad">Introduce la calificacion del alumno</label>
-					<input type="text" name="" id="calificacion" value="" />
-					<div class="col-md-3"></div>
+					<input type="button" class="" name="confirmarAlumno" id="agregarAlumno()" onClick = "AgregarAlumno()"value="Agregar"/>
+					<input type="button" class="" name="confirmarCalificacion" id="calcularPromedio()" onClick = "CalcularPromedio()"value="Calcular"/>
+					<div class="col-md-6"></div>
 				</div>
-				<br>
-				<div><input type="button" class="" name="confirmar" id="agregarAlumno()" onClick = "AgregarAlumno()"value="ok!" /></div>
 				<div class="row" id="alumnos">
-
+				
 
 				</div>	
 		  </form>

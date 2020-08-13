@@ -1,5 +1,8 @@
-"use strict";
+
+
+// import { hello } from './arreglocalificacionesActuales.js';
 var contador = 0;
+var arreglocalificacionesActuales = [];
 function AgregarAlumno() {
   contador ++;
   //alert(contador);
@@ -19,8 +22,37 @@ function AgregarAlumno() {
 		"/>" +
 		"</div>"+
 		"<div>"+
-		'<input type="button" name="botonEliminar" id="'+eliminarCampo+contador+'" onClick="eliminarCampo('+contador+')" value="(X)">'+
+		'<input type="button" name="botonEliminar" id="'+eliminarCampo+contador+'" onClick="eliminarCampo('+contador+', '+calificaciones.value+')" value="(X)">'+
 		"</div>";
 	document.getElementById("alumnos").appendChild(div);
 	document.getElementById("alumnos").appendChild(div);
+	//console.log(hello());
+	agregarArreglo(parseInt(calificaciones.value), 
+	(cal) => {
+	  arreglocalificacionesActuales.push(cal);
+	},
+	() =>{
+	  arreglocalificacionesActuales.push(50);
+	},
+	() =>{
+	  arreglocalificacionesActuales.push(100);
+	}
+	);
 }
+
+function getArregloCal(){
+return arreglocalificacionesActuales;
+}
+
+function agregarArreglo(calificacion, MateriaAprobada, MateriaReprobada, MateriaSobrepasada){
+  if(calificacion > 100){
+   MateriaSobrepasada();
+  }else if(calificacion>=50){
+  MateriaAprobada(calificacion);
+  }else{
+  MateriaReprobada();
+  }
+}
+
+
+
