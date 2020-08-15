@@ -5,7 +5,7 @@ var contador = 0;
 var arreglocalificacionesActuales = [];
 function AgregarAlumno() {
   contador ++;
-  //alert(contador);
+  //alert(contador); '<label>"'+nombre.value+'"</label>'
 	var nombre = document.getElementById("alumno"); 
 	var calificaciones = document.getElementById("calificacion");
 	var div = document.createElement("div");
@@ -13,17 +13,15 @@ function AgregarAlumno() {
 	div.setAttribute("class", "form-inline");
 	div.setAttribute("id",("prueva"+contador));
 	div.innerHTML =
+	    '<div class="NuevoCampo">'+
 		"<div>" +
-		'<input type = "text" value = "'+(nombre.value)+'" id="nombre'+contador+'"'+
-		"/>"+ 
-		"</div>" +
-		"<div>" +
-		'<input type="text" value = "'+(calificaciones.value)+'" id="calificacion'+contador+'"'+
-		"/>" +
+			'<label>'+nombre.value+'</label>'+
 		"</div>"+
-		"<div>"+
-		'<input type="button" name="botonEliminar" id="'+eliminarCampo+contador+'" onClick="eliminarCampo('+contador+', '+calificaciones.value+')" value="(X)">'+
-		"</div>";
+		'<div class="espacioBoton">'+
+	        	'<label class="espacio">'+calificaciones.value+'</label>'+
+		  	'<input type="button" name="botonEliminar" id="'+eliminarCampo+contador+'" onClick="eliminarCampo('+contador+', '+calificaciones.value+')" value="    X    ">'+
+		"</div>"+
+	    "</div>";
 	document.getElementById("alumnos").appendChild(div);
 	document.getElementById("alumnos").appendChild(div);
 	//console.log(hello());
