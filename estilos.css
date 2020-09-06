@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+label {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(#8d93ab);
+}
+#Titulo{
+color:#ed6663;
+}
+
+.restriccion {
+  padding: 0 0 0 30%;
+  max-width: 40%;
+  align-content: center;
+}
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+.centro {
+  font-size: 4rem;
+  text-align: center;
+}
+.botonCrear {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.4rem;
+  width: 30%;
+  border-radius: 10rem;
+}
+.botonIniciar {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.4rem;
+  width: 30%;
+  border-radius: 10rem;
+}
+
+.formulario {
+}
+#lbclave {
+  font-size: 2rem;
+  padding: 1.8rem 1.6rem 1rem 5.5rem;
+}
+#lbusuario {
+  font-size: 2rem;
+  padding: 1rem;
+}
+#txtusuario {
+  width: 13rem;
+}
+.password {
+  width: 13rem;
+  margin-right: 1rem;
+}
+.formularioRegistro {
+  display: grid;
+  max-width: 100%;
+  justify-content: center;
+  font-size: 2rem;
+}

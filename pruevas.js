@@ -1,0 +1,4 @@
+function prueva(){
+alert("Hola");
+
+}

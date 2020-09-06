@@ -14,7 +14,7 @@ function eliminarDelArreglo(DatoBorrar){
 if(DatoBorrar<50){
 DatoBorrar = 50;
 }
-
+ 
 var quitarNumero = ArregloCalificaciones.indexOf(DatoBorrar);
 window.arreglocalificacionesActuales.splice(quitarNumero, 1);
 }

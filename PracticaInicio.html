@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Practica 1</title>
-		<script type="text/javascript" src="PracticaFunciones1.js"></script> 
-		<script type="text/javascript" src="eliminarElemento.js"></script> 
-	        <script type="text/javascript" src="calcularPromedio.js"></script>
-		<link rel="stylesheet" href="style.css" type="text/css" media="all">
-	</head>
-	<body>
-    		<div class="container">
-		  <h1 class="principal">Promedia</h1>
-		  <br>
-		  <form id="form" action="#" method="post" class="init">
-				<div class="row">
-					<div class="col-md-1">
-					<label for="cantidad">Introduce el nombre de la materia</label>
-					</div>
-					<br>
-					<div class="col-md-2">
-					<input type="text" class="long-size" name="" id="alumno" value="" />
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-3">
-					<label for="cantidad">Introduce la calificacion de la materia </label>
-					</div>
-					<br>
-					<div class="col-md-4">
-					<input type="text" class="long-size" name="" id="calificacion" value="" />
-					</div>
-				</div>
-				
-				<div class="row">
-				  <br>
-				  <div class="boton"> 
-					<div class="col-md-5">
-					      <input type="button" class="" name="confirmarAlumno" id="agregarAlumno()" onClick = "AgregarAlumno()"value="Agregar"/>
-					      <br>
-					      <br>
-					      <label>Materias</label>
-			         	</div>
-					<div class="col-md-6">
-					      <input type="button" class="" name="confirmarCalificacion" id="calcularPromedio()" onClick = "CalcularPromedio()"value="Calcular"/>
-					      <br>
-					      <br>
-					      <label>Calificaciones</label> 
-					</div>
-			      	 </div>
-				</div>
-				<div class="row" id="alumnos">
-				
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Practica 1</title>
+    <script type="text/javascript" src="PracticaFunciones1.js"></script>
+    <script type="text/javascript" src="eliminarElemento.js"></script>
+    <script type="text/javascript" src="calcularPromedio.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="principal">Promedia</h1>
+      <br />
+      <form id="form" action="#" method="post" class="init">
+        <div class="row">
+          <div class="col-md-1">
+            <label for="cantidad">Introduce el nombre de la materia</label>
+          </div>
+          <br />
+          <div class="col-md-2">
+            <input type="text" class="long-size" name="" id="alumno" value="" />
+          </div>
+        </div>
 
-				</div>	
-		  </form>
-		</div>
-	</body>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="cantidad"
+              >Introduce la calificacion de la materia
+            </label>
+          </div>
+          <br />
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="long-size"
+              name=""
+              id="calificacion"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <br />
+          <div class="boton">
+            <div class="col-md-5">
+              <input
+                type="button"
+                class=""
+                name="confirmarAlumno"
+                id="agregarAlumno()"
+                onClick="AgregarAlumno()"
+                value="Agregar"
+              /> 
+              <br />
+              <br />
+              <label>Materias</label>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="button"
+                class=""
+                name="confirmarCalificacion"
+                id="calcularPromedio()"
+                onClick="CalcularPromedio()"
+                value="Calcular"
+              />
+              <br />
+              <br />
+              <label>Calificaciones</label>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="alumnos"></div>
+      </form>
+    </div>
+  </body>
 </html>
+
+

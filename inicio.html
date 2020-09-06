@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Promedia | Inicio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="sources/p_icon-icons.com_60469.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css" type="text/css" media="all" />
+    <script src="mostrarClave.js" charset="utf-8"></script>
+    <script src="pruevas.js" charset="utf-8"></script>
+    <script src="eliminarCampos.js" charset="utf-8"></script>
+    <script src="inicio.js" charset="utf-8"></script>
+    <script src="registro.js" charset="utf-8"></script>
+    <script src="funcionalidadInicio.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <main>
+      <div class="centro">
+        <h1 id="Titulo">Promedia</h1>
+        <form action="opciones" method="get" accept-charset="utf-8">
+          <div class="restriccion">
+            <div class="botones">
+              <input
+                class="botonCrear"
+                type="button"
+                name="registro"
+                id="registro"
+                value=" Registrarse "
+                onClick="AbrirRegistro()"
+              />
+              <input
+                class="botonIniciar"
+                type="button"
+                name="iniciar"
+                id="iniciar"
+                value="Iniciar secion"
+                onClick="AbrirInicio()"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="mostrarOpcion">
+	  <div  id="contenedorInicio" class="contenedorInicio">
+
+
+
+	  </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+

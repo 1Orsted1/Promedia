@@ -1,76 +1,77 @@
-
-*{margin:0; padding:0;}
-
-html{
-box-sizing: border-box;
-font-size:62.5%;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-*,*:before, *:after{
-box-sizing:inherit;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-body{
-font-family:'Lato',sans-serif;
-font-size:1.6rem;
-line-height:1.5;
-background-color: #ffffdd;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-div{
-margin:.1rem;
-padding:.1rem;
-line-height:3rem;
-
-}
-input:not([type="text"]){
-font-weight:500;
-font-size:2.1rem;
-padding:.3rem .9rem;
-border-radius:1rem;
-background-color:#cbeaed;
-color:#006a71;
-}
-input:not([type="button"]){
-display: block;
-border-radius:1rem;
-font-size:2.1rem;
-width:94%;
-padding:.6rem;
-background-color:#cbeaed;
-color:#ff5722;
-} 
-.espacio{
-  padding:2rem 2rem 2rem 2rem;
-}
-.NuevoCampo{
-display:flex;
-justify-content:space-between;
-}
-.boton{
-display:flex;
-justify-content:space-between;
-}
-.principal{
-  padding:0 0 0 40%;
-  color:#006a71;
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #ffffdd;
 }
 
-.fw300{
-font-weight:300 ;
-} 
-
-.container{
-opacity: .9;
-color: #006a71;
-padding: 1.5rem 2.5rem 4.7rem 2.5rem;
-max-width: 200rem;
-font-size: 2.4rem;
-
+div {
+  margin: 0.1rem;
+  padding: 0.1rem;
+  line-height: 3rem;
+}
+input:not([type="text"]) {
+  font-weight: 500;
+  font-size: 2.1rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 1rem;
+  background-color: #cbeaed;
+  color: #006a71;
+}
+input:not([type="button"]) {
+  display: block;
+  border-radius: 1rem;
+  font-size: 2.1rem;
+  width: 94%;
+  padding: 0.6rem;
+  background-color: #cbeaed;
+  color: #ff5722;
+}
+.espacio {
+  padding: 2rem 2rem 2rem 2rem;
+}
+.NuevoCampo {
+  display: flex;
+  justify-content: space-between;
+}
+.boton {
+  display: flex;
+  justify-content: space-between;
+}
+.principal {
+  padding: 0 0 0 40%;
+  color: #006a71;
 }
 
-.init{
-display:grid;
-justify-content:center;
+.fw300 {
+  font-weight: 300;
 }
 
+.container {
+  opacity: 0.9;
+  color: #006a71;
+  padding: 1.5rem 2.5rem 4.7rem 2.5rem;
+  max-width: 200rem;
+  font-size: 2.4rem;
+}
+
+.init {
+  display: grid;
+  justify-content: center;
+}
